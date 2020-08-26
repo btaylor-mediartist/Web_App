@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+/* button */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  text-decoration: none;
+  color: #20B;
+}
+a:active {
+  text-decoration: underline;
+  color: #20B;
+}
+
+#bodytext {
+  text-align: center;
+  color: #6D3C16;
+  background-size: 100%;
+  background-image: url("lined-page.png");
+  background-repeat: repeat-y;
+  /*background-size: 46px;*/
+  display: grid;
+  margin: 0px auto;
+  max-width: 1140px;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  border-right: #FFF8EC 5px solid;
+  border-left: #FFF8EC 5px solid;
+}
+
+#bodytext div {
+  grid-column: span 2;
+  margin: 0 1em;
+}
+#bodytext div:nth-child(2) {
+  border-top: 3px solid #6D3C16;
+}
+/* media query */
+@media only screen and (min-width: 720px) {
+  #bodytext div {
+    grid-column: auto;
+    margin: 0;
+  }
+  #bodytext div:nth-child(2) {
+    border: none;
+    border-left: 3px solid #6D3C16;
+  }
+}
+
+
+#header {
+  /*background-size: cover;
+  background-image: url("lined-page-top.png");*/
+  border-top: black 2vw dotted;
+  border-bottom: #FFF8EC 5px solid;
+  border-right: #FFF8EC 5px solid;
+  border-left: #FFF8EC 5px solid;
+  padding: 0px;
+  padding-top: 20px;
+
+  text-align: center;
+  color: #6D3C16;
+  background-size: 100%;
+  background-image: url("blank-page-top.png"), url("lined-page.png");
+  background-repeat: no-repeat, repeat-y;
+  /*background-size: 46px;*/
+  margin: 0px auto;
+  max-width: 1140px;
+}
+
+h1 {
+  font-size: 6vw;
+  padding: 0px;
+  margin: 50px;
+  margin-bottom: 0px;
+
+}
+
+h4 {
+  font-family: 'Kalam', cursive;
+  font-size: 0.5vw + 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+h5 {
+  line-height: 0px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+h6 {
+  font-family: 'Kalam', cursive;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+body {
+  padding-top: 15px;
+  /*color: #2A8;*/
+  font-family: 'Permanent Marker', fantasy;
+  margin: 0;
+  background-color: black;
+
+}
