@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
     {% block head %}
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-    <meta name="description" content="Digital things to do list" />
+    <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
     {% endblock %}
   </head>
 
   <body>
-    {% block content %}
-    
-    {% endblock %}
+
+    {% block content %} {% endblock %}
+
   </body>
+
 </html>

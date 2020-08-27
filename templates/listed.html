@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}LIST{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div id="header">
+      <h1>TOTAL LIST</h1>
+      <p>ORDER CONFIRMATION</p>
+    </div>
+
+    <div id="bodytext">
+
+      <div>
+        <h2>Films</h2>
+        <ol class="items">
+          {% for film in films %}
+          <li>{{ film[0] }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+
+      <div>
+        <h2>Games</h2>
+        <ol class="items">
+          {% for game in games %}
+          <li>{{ game[0] }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+
+      <div>
+        <h2>Texts</h2>
+        <ul class="items">
+          {% for textble in textbles %}
+          <li>{{ textble[0] }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h2>Miscs</h2>
+        <ul class="items">
+          {% for misc in miscs %}
+          <li>{{ misc[0] }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+{% endblock %}

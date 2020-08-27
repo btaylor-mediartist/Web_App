@@ -1,27 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}212 Burgers{% endblock %}
+{% block title %}SAVED FOR LATER{% endblock %}
 
 {% block content %}
 
 <div id="header">
-  <h1>SAVED FOR LATER</h1>
-  <h5>HOME &bull; <a href="input.html">INPUT</a> &bull; <a href="output.html">OUTPUT</a></h5>
-  <h4>This is for people who have too many <q>to do</q>, <q>to watch</q>, <q>to read</q> lists.
-     Here everything is stored and categorised so that you can go back to it when you have time.</h4>
+<h1>SAVED FOR LATER</h1>
+<h5><a href="{{ url_for('filmlink') }}">FILMS &bull;</a>
+  <a href="{{ url_for('gamelink') }}">GAMES &bull;</a>
+  <a href="{{ url_for('textlink') }}">TEXTS &bull;</a>
+  <a href="{{ url_for('misclink') }}">MISC.</a>
+  <a href="{{ url_for('listed') }}">ALL</a></h5>
+<h4>This is for people who have too many <q>to do</q>, <q>to watch</q>, <q>to read</q> lists.
+   Here everything is stored and categorised so that you can go back to it when you have time.</h4>
 </div>
 
 <div id="bodytext">
+
   <div>
-    <h2><a href="input.html">INPUT</a></h2>
-    <h3>FILM &bull; GAME &bull; TEXT &bull; MISC.</h3>
-    <h6>Items to store.</h6>
+    <a style="font-size: 30px;" href="{{ url_for('filmlink') }}">FILMS</a>
   </div>
 
   <div>
-    <h2><a href="output.html">OUTPUT</a></h2>
-    <h3>FILM &bull; GAME &bull; TEXT &bull; MISC.</h3>
-    <h6>Items to be retrieved from storage.</h6>
+    <a style="font-size: 30px;" href="{{ url_for('gamelink') }}">GAMES</a>
+  </div>
+
+  <div>
+    <a style="font-size: 30px;" href="{{ url_for('textlink') }}">TEXTS</a>
+  </div>
+
+  <div>
+    <a style="font-size: 30px;" href="{{ url_for('misclink') }}">MISC.</a>
   </div>
 </div>
 {% endblock %}
