@@ -34,7 +34,7 @@ def fetchMenu(con):
 
     return {'films':films, 'games':games, 'textbles':textbles, 'miscs':miscs}
 
-@app.route('/index')
+@app.route('/')
 def index():
 
     return render_template('index.html')

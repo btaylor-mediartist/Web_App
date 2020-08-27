@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
-.items {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
 
 /* button */
 a:link {
@@ -39,9 +33,9 @@ a:active {
   padding: 0px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-/*
+
   border-right: #FFF8EC 5px solid;
-  border-left: #FFF8EC 5px solid;*/
+  border-left: #FFF8EC 5px solid;
 }
 
 #bodytext div {
@@ -49,8 +43,8 @@ a:active {
   margin: 0 1em;
 }
 #bodytext div:nth-child(4) {
-  /*border-bottom: 3px solid #6D3C16;
-  border-top: 3px solid #6D3C16; */
+  border-bottom: 3px solid #6D3C16;
+  border-top: 3px solid #6D3C16;
 
 }
 /* media query */
