@@ -10,10 +10,15 @@
 {% block content %}
 
     <div id="header">
-      <h1>TOTAL LIST</h1>
-    </div>
+      <h5>
+        <a href="{{ url_for('index') }}">HOME &bull;</a>
+        <a href="{{ url_for('filmlink') }}">FILMS &bull;</a>
+        <a href="{{ url_for('gamelink') }}">GAMES &bull;</a>
+        <a href="{{ url_for('textlink') }}">TEXTS &bull;</a>
+        <a href="{{ url_for('misclink') }}">MISC. &bull;</a>
+        <a href="{{ url_for('listed') }}">ALL</a></h5>
 
-    <div>
+      <h1>FILM LIST</h1>
 
       <div>
         <h2>Films</h2>
